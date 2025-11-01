@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon Blast: Night Market Shooter</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div id="game-container">
+        
+        <div id="prize-stall-background"></div>
+
+        <div id="scoreboard">
+            <span id="timer-display">TIMER: --</span>
+            <span id="score-display">POINTS: 0</span>
+        </div>
+
+        <div id="balloon-board">
+            <div id="target-area">
+            </div>
+        </div>
+        
+        <span id="gun-model">🔫</span>
+
+        <div id="modal" class="hidden">
+            <h1 id="modal-title">🐻 GREAT JOB!</h1> 
+            <p id="modal-instructor">Ready for the next challenge?</p> 
+            <p id="modal-message">Level 1 complete! Preparing for Level 2...</p>
+            <button id="next-level-btn">Start Level 2</button>
+        </div>
+    </div>
+
+    <audio id="shoot-sound" src="sounds/boom.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
